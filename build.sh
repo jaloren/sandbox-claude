@@ -10,4 +10,4 @@ else
 fi
 
 IMAGE=sandbox-claude
-"${CONTAINER_CMD}" build --build-arg CACHE_BUST=$(date +%s) --tag "${IMAGE}" .
+"${CONTAINER_CMD}" build --tag "${IMAGE}" .
