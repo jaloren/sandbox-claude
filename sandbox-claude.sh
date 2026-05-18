@@ -13,5 +13,5 @@ IMAGE=sandbox-claude
 docker run -ti \
   --env-file "${ENVRC}" \
   -e INTERACTIVE "${EXTRA_ARGS[@]}" \
-  -v "${HOME}/.claude:/root/.claude" \
+  -v "${HOME}/.claude:/home/sandbox/.claude" \
   -v "${PWD}:/work" --rm "${IMAGE}"

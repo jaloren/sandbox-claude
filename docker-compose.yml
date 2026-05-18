@@ -12,7 +12,7 @@ services:
       - POSTGRES_USER=${POSTGRES_USER:-postgres}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}
     volumes:
-      - .container-claude:/root/.claude
+      - .container-claude:/home/sandbox/.claude
       - .:/work
     stdin_open: true
     tty: true
